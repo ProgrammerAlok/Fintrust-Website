@@ -1,0 +1,23 @@
+.home_experience_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.home_experience_container h2 {
+
+}
+
+.home_experience_container span {
+
+}
+
+.home_experience_banner {
+    width: 71.9375rem;
+    height: 26.1875rem;
+    flex-shrink: 0;
+    background: url(../../assets/fintrust4.png) no-repeat center center;
+    background-size: cover;
+}
