@@ -2,24 +2,37 @@ import React, { useEffect, useState } from 'react'
 import './borrow.css'
 import Navbar from '../../components/navbar/Navbar'
 import { useAuth } from '../../context/AppContext'
+import { database } from '../../firebase/firebase.js'
+import { useNavigate } from 'react-router-dom'
 
 const Borrow = () => {
+  const navigate = useNavigate()
 
   const {
     authUser, setAuthUser,
     isLoggedin, setIsLoggedin } = useAuth()
 
   const [user, setUser] = useState({
-    amount: '', wallet_address: '', reason: ''
+    amount: '', wallet_address: '', reason: '', repay: false, lender: ''
   })
+
+  const createUserInDB = async(user) => {
+    // let res = await database.user.add({name, age});
+    let res = await database.user.doc().set(user);
+    console.log(res);
+  }
 
   const handleSave =  ()=>{
     user.wallet_address =  JSON.parse(localStorage.getItem('user-wa') || "");
-    const oldData = JSON.parse(localStorage.getItem('fintech-app') || '[]')
-    localStorage.setItem('fintech-app', JSON.stringify([...oldData, user]))
+    // const oldData = JSON.parse(localStorage.getItem('fintech-app') || '[]')
+    // localStorage.setItem('fintech-app', JSON.stringify([...oldData, user]))
+    // data.push({...user})
+    createUserInDB(user)
+    console.log(user)
     setUser({
       amount: '', wallet_address: '', reason: ''
     })
+    navigate('/')
   }
 
   return (

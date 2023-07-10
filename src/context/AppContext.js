@@ -7,6 +7,8 @@ export const useAuth = () => { return useContext(AppContext); }
 export const AppProvider = ({ childern }) => {
   const [authUser, setAuthUser] = useState(null)
   const [isLoggedin, setIsLoggedin] = useState(false)
+  const [isTimerOn, setIsTimerOn] = useState(false)
+  const [sendTokenVar, setSendTokenVar] = useState(()=>{console.log("i am free")})
 
   // useEffect(() => {
   //   const subscribe = AuthService.subscribe((user) => {
@@ -24,7 +26,10 @@ export const AppProvider = ({ childern }) => {
 
   const value = {
     authUser, setAuthUser,
-    isLoggedin, setIsLoggedin
+    isLoggedin, setIsLoggedin,
+    isTimerOn, setIsTimerOn,
+    sendTokenVar, setSendTokenVar
+
   }
 
   return (
