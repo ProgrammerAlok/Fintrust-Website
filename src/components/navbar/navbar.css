@@ -3,6 +3,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    gap: 40rem;
+}
+
+.home_nav_container h2 {
+    
 }
 
 .home_nav_left {
@@ -12,8 +19,8 @@
 }
 
 .home_nav_logo {
-    width: 5.625rem;
-    height: 5.23081rem;
+    width: 3rem;
+    height: 3rem;
     flex-shrink: 0;
     background: url(../../assets/fintrust.png) no-repeat center center;
     background-size: cover;
@@ -22,7 +29,7 @@
 .home_nav_heading {
     color: #FFF;
     font-family: Allerta;
-    font-size: 3rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -31,4 +38,13 @@
 
 .home_nav_right {
 
+}
+
+.home_nav_container button {    
+  width: 6rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 1.6875rem;
+  background: rgba(43, 42, 41, 1);
+  color: var(--color-white);
 }

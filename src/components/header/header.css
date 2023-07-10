@@ -3,11 +3,11 @@
     background: var(--color-bg-variant);
     display: flex;
     justify-content: space-around;
-
+    gap: -1rem;
 }
 
-.home_header_container h1 {
-    
+.home_header_container h2 {
+    color: var(--color-white);
 }
 
 .home_header_left {
@@ -20,8 +20,8 @@
 }
 
 .home_header_banner_image {
-    width: 65.3125rem;
-    height: 34rem;
+    height: 20rem;
+    width: 40rem;
     flex-shrink: 0;
     background: url(../../assets/fintrust2.png) no-repeat center center;
     background-size: cover;

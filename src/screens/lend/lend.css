@@ -1,0 +1,28 @@
+.lend_container {
+    /* width: var(--container-width-lg); */
+    align-self: center;
+}
+.land_card {
+    width: 16rem;
+    height: 13rem;
+    flex-shrink: 0;
+    background: rgba(0, 233, 134, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1rem;
+    border-radius: 2rem;
+    font-family: 'Aleo';
+    font-weight: bold;
+    gap: 1rem;
+}
+
+.lend_cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;500;600;700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -29,14 +33,26 @@ body {
 }
 
 .btn {
-  width: 8.62806rem;
-  height: 3.26331rem;
+  width: 8rem;
+  height: 2.5rem;
   flex-shrink: 0;
   border-radius: 1.6875rem;
   background: rgba(43, 42, 41, 1);
   color: var(--color-white);
+  font-weight: 500;
+}
+
+.btn:hover {
+  color: rgba(43, 42, 41, 1);
+  background: white;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
