@@ -1,6 +1,8 @@
 # FinTrust
 A decentralized finance (DeFi) platform designed to support small businesses by facilitating small loan requests and lending opportunities. Our solution leverages the Flow blockchain to ensure secure and efficient transactions.
 
+![FinTrust](https://raw.githubusercontent.com/CoderSahel/Fintrust-Website/master/public/Introductionas.png)
+
 This project was done in a hackathon: Hack4Bengal 2.0
 
 ## Team members worked on this project:
