@@ -1,3 +1,8 @@
+#FinTrust
+A decentralized finance (DeFi) platform designed to support small businesses by facilitating small loan requests and lending opportunities. Our solution leverages the Flow blockchain to ensure secure and efficient transactions.
+
+This project was done in a hackathon: Hack4Bengal 2.0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
